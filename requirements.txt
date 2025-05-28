@@ -1,0 +1,6 @@
+streamlit
+hnswlib
+numpy
+pandas
+sentence-transformers
+huggingface_hub
