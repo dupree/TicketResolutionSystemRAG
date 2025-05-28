@@ -1,10 +1,10 @@
-# Advanced RAG-based IT Helpdesk Assistant
+# Retrieval-Augmented Generation (RAG) based IT Helpdesk Assistant
 
-This project details the development of an advanced IT Helpdesk Assistant, a sophisticated application built upon a Retrieval-Augmented Generation (RAG) framework. It showcases a robust blend of software engineering and Data Science/Machine Learning (DS/ML) skills to create a system that empowers IT support agents. By intelligently leveraging historical ticket data, the assistant provides context-aware guidance for resolving new issues. The solution is delivered as an interactive Streamlit application, utilizing state-of-the-art Hugging Face models for its core natural language processing tasks, including ticket matching and resolution suggestion.
+This project details the development of an IT Helpdesk Assistant, a sophisticated application built upon a Retrieval-Augmented Generation (RAG) framework. It showcases a blend of software engineering and Data Science/Machine Learning (DS/ML) skills to create a system that empowers IT support agents. By leveraging historical ticket data, the assistant provides context-aware guidance for resolving new issues. The solution is delivered as an interactive Streamlit application, utilizing state-of-the-art Hugging Face models for its core natural language processing tasks, including ticket matching and resolution suggestion.
 
 ## Problem Addressed
 
-IT helpdesks often grapple with the challenge of redundant tickets and the inefficient use of accumulated knowledge. Support agents may not always be aware of previously resolved similar issues, leading to duplicated efforts and longer resolution times. This project addresses this by developing a system that:
+IT helpdesks often grapple with the challenge of redundant tickets and the inefficient use of accumulated knowledge. (Human) Support agents may not always be aware of previously resolved similar issues, leading to duplicated efforts and longer resolution times. This project addresses this by developing a system that:
 
 1.  Intelligently matches incoming tickets to a rich database of historical tickets.
 2.  Furnishes agents with actionable guidance derived from past resolutions, thereby assisting, not replacing, human expertise.
@@ -45,7 +45,6 @@ The system is built on a Retrieval-Augmented Generation (RAG) architecture, divi
 ### Architecture Diagram
 
 ![System Architecture Diagram](ticket_resolution_system_architecture.png)
-*(Assuming `ticket_resolution_system_architecture.png` is in the same directory as this README)*
 
 ## Technical Stack & Skills Showcased
 
@@ -58,8 +57,9 @@ This project demonstrates proficiency in:
 * **Vector Search**: Implementing efficient similarity search with HNSWLib.
 * **Data Processing & Analysis**: Handling and preparing data from various formats (CSV, XLSX, JSON) using Pandas.
 * **Software Engineering**:
-    * Developing a full-stack application with a Python backend.
-    * Building an interactive user interface with Streamlit.
+    * a full-stack application with a Python backend.
+    * An interactive user interface with Streamlit.
+    
 * **Machine Learning Operations (MLOps) Principles**: Considerations for indexing, model serving (via API), and component-based architecture.
 
 ## Assumptions
@@ -120,6 +120,7 @@ To enhance the system's robustness, scalability, and intelligence, the following
     * Dynamically determine similarity thresholds.
     * Refine prompt engineering for more constrained and accurate responses.
     * Explore **smaller, fine-tuned models** for optimized performance and cost.
+
 * **Enhancing System Design & Architecture**:
     * Integrate a dedicated **vector database** (e.g., FAISS, Pinecone, Weaviate) for efficient, scalable similarity search and real-time updates.
     * Implement **asynchronous processing** for external API calls.
@@ -127,6 +128,7 @@ To enhance the system's robustness, scalability, and intelligence, the following
     * Transition towards a **microservices architecture** for better scalability and maintainability.
     * Enable **dynamic updates to the knowledge base** without full index rebuilds.
     * Store user interactions and feedback to create a continuous learning loop.
+
 * **Error Handling & Security**:
     * Implement more **robust error handling**, retry mechanisms, and fallback strategies.
     * Introduce **input validation and sanitization**.
@@ -134,4 +136,4 @@ To enhance the system's robustness, scalability, and intelligence, the following
 
 ## Conclusion
 
-This project delivers a functional and intelligent RAG-based system designed to significantly improve IT helpdesk efficiency. It effectively demonstrates the application of advanced software engineering and Data Science/Machine Learning techniques to solve a practical business problem. While the current implementation has identified areas for growth, it serves as a strong foundation for a highly scalable, robust, and even more intelligent IT support tool. The development journey has highlighted skills in NLP, information retrieval, LLM integration, and full-stack application development.
+This project delivers a functional and intelligent RAG-based system designed to significantly improve IT helpdesk efficiency. It effectively demonstrates the application of software engineering and Data Science/Machine Learning techniques to solve a practical business problem. While the current implementation has identified areas for growth, it serves as a strong foundation for a highly scalable, robust, and even more intelligent IT support tool. The development journey has highlighted skills in NLP, information retrieval, LLM integration, and full-stack application development.
